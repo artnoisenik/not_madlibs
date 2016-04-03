@@ -1,4 +1,3 @@
-
 exports.up = function(knex, Promise) {
   return Promise.all([
 
@@ -9,15 +8,15 @@ exports.up = function(knex, Promise) {
     }),
     knex.schema.createTable('strains', function( table ){
       table.increments();
-      table.string('word');
+      table.string('strain');
     }),
     knex.schema.createTable('types', function( table ){
       table.increments();
-      table.string('word');
+      table.string('type');
     }),
     knex.schema.createTable('places', function( table ){
       table.increments();
-      table.string('word');
+      table.string('place');
     })
 
   ])
