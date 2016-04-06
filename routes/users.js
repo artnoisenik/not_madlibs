@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var knex = require('knex')(require('../knexfile')['development']);
+var bcrypt = require('bcrypt');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
