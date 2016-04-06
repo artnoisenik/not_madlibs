@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('auth', { title: 'Dab Libs' });
 });
 
+router.get('/home/:username', function(req, res, next) {
+  res.render('dablibs', { title: 'Dab Libs' });
+});
+
 router.post('/addstrain', function(req, res, next) {
   knex('strains')
     .insert(req.body)
