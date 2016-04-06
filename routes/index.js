@@ -4,7 +4,7 @@ var knex = require('knex')(require('../knexfile')['development']);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Dab Libs' });
+  res.render('auth', { title: 'Dab Libs' });
 });
 
 router.post('/addstrain', function(req, res, next) {
