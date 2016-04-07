@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/home/:username', function(req, res, next) {
-  res.render('dablibs', { title: 'Dab Libs' });
+  res.render('index', { title: 'Dab Libs' });
 });
 
 router.post('/addstrain', function(req, res, next) {
